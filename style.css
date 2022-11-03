@@ -116,8 +116,6 @@ label {
 }
 
 
-
-
 input {
     outline: none;
     border: 1px solid #ccc;
@@ -127,15 +125,14 @@ input {
 }
 
 
-input[type=text]:focus {
-
+input:focus {
     border: 1px solid blue;
 }
 
 
 button {
     background-color: #596D48;
-    margin-top: 4vh;
+    margin-top: 2vh;
     margin-left: 4vh;
     border-radius: 8px;
     color: white;
@@ -145,20 +142,29 @@ button {
 
 input+span {
     position: relative;
-    right:-90px;
-    top:-2.6vh;
+    right: -90px;
+    top: -2.6vh;
 }
 
 
-input:invalid+span::after{
+input:invalid+span::after {
     content: "✖";
     color: red;
- 
+
 }
 
 
 
-input:valid + span::after {
+input:valid+span::after {
     content: "✓";
     color: green;
-  }
+}
+.already-a-user{
+    font-size:1.2em;
+    padding-top:1vh;
+    margin-left:2vw;
+}
+
+a,a:visited{
+    color: #596D48;
+}
