@@ -32,7 +32,7 @@
                 <div class="form-subsection">
                     <div class="input-section">
                         <label for="first_name">FIRST NAME</label>
-                        <input type="text" name="first_name" id="first_name" >
+                        <input type="text" name="first_name" id="first_name" placeholder="Enter your name here">
                     </div>
                     <div class="input-section">
                         <label for="last_name">LAST NAME</label>
@@ -46,17 +46,18 @@
                     </div>
                     <div class="input-section">
                         <label for="phone_number">PHONE NUMBER</label>
-                        <input type="tel" name="phone_number" id="phone_number" required>
+                        <input type="tel" name="phone_number" id="phone_number" minlength="6" maxlength="10"
+                            pattern="(\d{10})" title="Please enter a valid phone number: 1234567890" required>
                     </div>
                 </div>
                 <div class="form-subsection">
                     <div class="input-section">
                         <label for="password">PASSWORD</label>
-                        <input type="text" name="password" id="password" required>
+                        <input type="text" name="password" id="password" minlength="7" maxlength="20" required><span></span>
                     </div>
                     <div class="input-section">
-                        <label for="last_name">LAST NAME</label>
-                        <input type="text" name="last_name" id="last_name" required>
+                        <label for="repeat_password">REPEAT PASSWORD </label>
+                        <input type="text" name="repeat_password" id="repeat_password" minlength="7" maxlength="20" required><span></span>
                     </div>
                 </div>
                 <button>Submit form</button>
