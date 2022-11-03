@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,61 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="wrapper">
-    <div class="image-section">
-        <div class="logo">
-            <img src="./logo.png" alt="">
-            <div class="logo-text">ODIN</div>
+        <div class="image-section">
+            <div class="logo">
+                <img src="./logo.png" alt="">
+                <div class="logo-text">ODIN</div>
+            </div>
+            <div class="footer">
+                Created for the Odin Project
+            </div>
         </div>
-        <div class="footer">
-            Created for the Odin Project
+        <div class="form-section">
+
+            <div class="lorem">This is not a real online service!
+                You know you need something like this in your life to realise your deepest dreams. <br> Sign up <em>
+                    now</em> to get started.<br><br>You <em>know</em> you want to.</div>
+
+            <hr>
+            <form action="post">
+                <legend>Let's do this!</legend>
+                <div class="form-subsection">
+                    <div class="input-section">
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" name="first_name" id="first_name" >
+                    </div>
+                    <div class="input-section">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" name="last_name" id="last_name" required>
+                    </div>
+                </div>
+                <div class="form-subsection">
+                    <div class="input-section">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="input-section">
+                        <label for="phone_number">PHONE NUMBER</label>
+                        <input type="tel" name="phone_number" id="phone_number" required>
+                    </div>
+                </div>
+                <div class="form-subsection">
+                    <div class="input-section">
+                        <label for="password">PASSWORD</label>
+                        <input type="text" name="password" id="password" required>
+                    </div>
+                    <div class="input-section">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" name="last_name" id="last_name" required>
+                    </div>
+                </div>
+                <button>Submit form</button>
+            </form>
         </div>
     </div>
-    <div class="form-section">
-        DEF
-    </div>
-</div>
 </body>
+
 </html>

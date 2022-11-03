@@ -2,51 +2,132 @@
     font-family: Norse-Bold;
     src: url("./Norse-Bold.otf") format("opentype");
 }
-body{
+
+body {
+    background-color: rgb(240, 238, 238);
     margin: 0px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     height: 100vh;
 }
-.wrapper{
-    display:flex;
+
+.wrapper {
+    display: flex;
 }
-.image-section{
+
+.image-section {
     background-image: url(./background.avif);
-    display:flex;
+    display: flex;
     flex-direction: column;
-    width:30vw;
-    height:100vh;
+    width: 30vw;
+    height: 100vh;
     position: relative;
+    flex-shrink: 0;
 }
-img{
-    max-width:10vh;
+
+img {
+    max-width: 10vh;
 }
-.logo{
+
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    padding-top: 20vh;
+
+}
+
+.lorem {
+    padding-left: 2vw;
+    margin-bottom: 2vh;
+    margin-right: 20vw;
+    flex-wrap: wrap;
+
+}
+
+.input-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-subsection {
+    padding-bottom: 20px;
+    display: flex;
+    gap: 50px;
+}
+
+.lorem,
+legend {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: calc(20px + 1vh);
+    font-weight: 600;
+}
+
+legend {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    color: rgb(80, 80, 80);
+}
+
+legend,
+.form-subsection {
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    padding-left: 2vw;
+    background-color: white;
+}
+
+.logo {
     background-color: grey;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top:40vh;
-    padding:5% 0;
-    width:30vw;
+    top: 40vh;
+    padding: 5% 0;
+    width: 30vw;
     opacity: 0.8;
 }
-.logo-text{
+
+.logo-text {
     font-family: Norse-Bold;
-    font-size: calc( 50px + (4vw));
+    font-size: calc(50px + (4vw));
 }
-.footer{
+
+.footer {
     font-weight: 700px;
     font-size: 1.2em;
-    color:grey;
+    color: grey;
     position: absolute;
-    bottom:0vh;
+    bottom: 0vh;
     text-align: center;
-    width:30vw;
-    padding:20px 0;
+    width: 30vw;
+    padding: 20px 0;
     opacity: 0.8;
     background-color: black;
 }
+
+label {
+    align-self: flex-start;
+    color: rgb(49, 49, 49);
+}
+
+
+
+
+input {
+    outline:none;
+    border: 1px solid #ccc;
+    border-radius:5px;
+    width:200px;
+    padding:5px;
+}
+
+
+input[type=text]:focus {
+    
+    border: 1px solid blue;
+  }
