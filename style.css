@@ -1,0 +1,52 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url("./Norse-Bold.otf") format("opentype");
+}
+body{
+    margin: 0px;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.wrapper{
+    display:flex;
+}
+.image-section{
+    background-image: url(./background.avif);
+    display:flex;
+    flex-direction: column;
+    width:30vw;
+    height:100vh;
+    position: relative;
+}
+img{
+    max-width:10vh;
+}
+.logo{
+    background-color: grey;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:40vh;
+    padding:5% 0;
+    width:30vw;
+    opacity: 0.8;
+}
+.logo-text{
+    font-family: Norse-Bold;
+    font-size: calc( 50px + (4vw));
+}
+.footer{
+    font-weight: 700px;
+    font-size: 1.2em;
+    color:grey;
+    position: absolute;
+    bottom:0vh;
+    text-align: center;
+    width:30vw;
+    padding:20px 0;
+    opacity: 0.8;
+    background-color: black;
+}
