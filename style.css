@@ -30,7 +30,8 @@ img {
 
 
 .form-section {
-    overflow: auto;
+    max-height:80vh;
+    overflow: scroll;
     display: flex;
     flex-direction: column;
     flex-grow: 0;
